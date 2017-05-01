@@ -138,7 +138,7 @@ button[type="submit"]:hover, .flex-item:hover{
   background: #C17CCF;
 }
 
-/***************** Flex Items - Flex Containers *******/
+/***************** Flex Items - Flex Containers (nav ul & .item-container)*******/
 
 .flex-item{
   flex:1;

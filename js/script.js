@@ -49,3 +49,8 @@ var products = [
   }
 ]
 
+//Function to be triggered on form submit
+function capture() {
+  event.preventDefault(); //stops form submit
+  console.log("Thanks for signing up " + document.signupForm.email.value + " -- Exclusive email offers and Winter Scarves product news is heading your way. Let the fun begin!");
+}

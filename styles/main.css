@@ -1,6 +1,7 @@
 /********** Global Styles *************/
 html {
-	background: #88686A;
+	background-color: rgb(4,17,45);
+	color: rgb(103,133,198);
   margin: 0;
 }
 
@@ -20,37 +21,46 @@ body {
   max-height: 6rem;
 }*/
 
-h1 .logo-w {
+/*h1 .logo-w {
   font-size: 3.5rem;
-}
+}*/
 
 h1, h2, h3 {
 	font-family: LatoLight, Helvetica, sans-serif;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 	margin: 0;
 	line-height: 1;
+	color: rgb(4,17,45);
 }
 
 h1 {
   font-size: 2.6rem;
 	font-weight: bold;
-	color: #575451;
 }
 
 h2 {
   font-size: 2rem;
-  color: #575451;
   text-align: center;
 	padding-top: 1.5rem;
 }
 
 h3 {
   font-size: 1.5rem; /* 1.2rem */
-	color: #88686A; /* #2d2d2d */
 	text-align: center;
   text-transform: capitalize; /* uppercase */
 }
 
+.logo-w {
+	font-size: 3.5rem;
+	color: rgb(122,143,188);
+}
+
+.topHeader {
+	background-image: url('../images/winter-background.jpg');
+	background-color: rgb(4,17,45);
+	background-repeat: repeat;
+	color: rgb(103,133,198);
+}
 /*********** Products Section ***********/
 section {
   padding: 0 .75rem;
@@ -79,14 +89,16 @@ nav a {
 } */
 
 nav li{
-  background-color: #88798C;
-  margin: 0.2em;
-  border: 0.1em solid #88798F;
+	background-color: rgb(4,30,86);
+	margin: 0.1em 0;
+  border: 0.1em solid rgb(4,12,144);
   box-sizing: border-box;
   text-align: center;
 }
 
-
+.fa {
+	color: white;
+}
 /*********** Form Element Styles ********************/
 
 .search-form{
@@ -123,7 +135,7 @@ input[type="search"], input[type="email"]{
 button[type="submit"]{
   box-sizing: border-box;
   border-radius: 0px 2px 2px 0px;
-  background:#88798C;
+  background-color: rgb(4,30,86);
   font-weight: 300;
   text-transform: uppercase;
   color: white;
@@ -136,7 +148,7 @@ button[type="submit"]{
 }
 
 button[type="submit"]:hover, .flex-item:hover{
-  background: #C17CCF;
+  background-color: rgb(4,12,144);
 }
 
 /***************** Flex Items - Flex Containers (nav ul & .item-container)*******/
@@ -175,4 +187,14 @@ button[type="submit"]:hover, .flex-item:hover{
   h1 {
     font-size: 1.5em;
   }
+}
+
+/****************************************************/
+/* For wider screens greater than 480px or 30em, load background image */
+@media screen and (min-width: 30em){
+html {
+	background-image: url('../images/winter-background.jpg');
+	background-color: rgb(4,17,45);
+	background-repeat: repeat;
+}
 }

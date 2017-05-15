@@ -1,0 +1,32 @@
+/* Styles for print media */
+
+/* Do not display background image for the page*/
+html {
+	background-color: rgb(4,17,45);
+	color: rgb(103,133,198);
+  margin: 0;
+}
+
+/* Do not display background image for header */
+.topHeader {
+	background-color: rgb(4,17,45);
+	color: rgb(103,133,198);
+}
+
+/* Remove navigation bar */
+nav {
+  display: none;
+}
+
+/* Substitute href links appropriately */
+a[href^="http://"]:after, a[href^="https://"]:after{
+  content: " (" attr(href) ")";
+}
+
+a[href^="#"]:after{
+  content: "";
+}
+
+body {
+  padding: 0;
+}

@@ -191,7 +191,7 @@ button[type="submit"]:hover, .flex-item:hover{
 
 /****************************************************/
 /* For wider screens greater than 480px or 30em, load background image */
-@media screen and (min-width: 30em){
+@media only screen and (min-width: 30em){
 html {
 	background-image: url('../images/winter-background.jpg');
 	background-color: rgb(4,17,45);

@@ -103,11 +103,11 @@ function shopProduct(productId,toggleCount){
     total = total + item.count;
     var productName = products.find(y => y.id == item.id).name;
     //Display each individual item name and it's individual count
-    //console.log(productName + " - Quantity = " + item.count);
+    console.log(productName + " - Quantity = " + item.count);
   }
 
   //Display total number of items in the cart
-  //console.log("Total number of items in your cart = " + total);
+  console.log("Total number of items in your cart = " + total);
   //Display total number of items in the cart next to the shopping cart icon in the nav bar
   document.getElementById("cartCount").innerHTML = " (" + total + ")";
 }
